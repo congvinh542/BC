@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5Y-Y6qZrGqXEqLahm2itdC45nRB15sL0xA&usqp=CAU">
+    <title>CSS-JQuery-Boostrap</title>
+    <!--link icon-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Link file css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="logo-icon"><i class="bx bxl-codepen bx-tada"></i><span> Font End Developer</span></div>
+            <ul>
+                <li><a href="css"><i style="color:rgb(255, 85, 7)" class="bx bxl-html5 bx-tada"></i> HTML</a></li>
+                <li><a href=""><i style="color:rgb(0, 74, 192)" class="bx bxl-css3 bx-tada"></i> CSS</a></li>
+                <li><a href=""><i style="color:rgb(0, 183, 255)" class="bx bxl-jquery bx-tada"></i> JQUERY</a></li>
+                <li><a href=""><i style="color:#720eff" class="bx bxl-bootstrap bx-tada"></i> BOOTSTRAP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--End Header-->
+
+    <section id="section" class="content">
+        <div class="section-container" data-aos="fade-in">
+            <!-- <h1>Hôm nay chúng ta sẽ cùng</h1> -->
+            <div class="section-text">Chúng ta cùng tìm hiểu về</div>
+            <div class="section-text-typing">
+                <li><span style="color:#264de4"><i style="line-height:90px" class="bx bxl-css3"></i> CSS</span></li>
+                <li><span style="color:#1866a9"><i style="line-height:90px" class="bx bxl-jquery"></i> JQuery</span></li>
+                <li><span style="color:#5c3d86"><i style="line-height:90px" class="bx bxl-bootstrap"></i>Bootstrap</span></li>
+            </div>
+        </div>
+    </section>
+    <!--End section text-->
+
+    
+    <!--Star section main-content-css-->
+    <section class="section-content">
+
+            <!--Star section main-content-css-->
+
+            <div id="css" class="main-content">
+                <!--Star main-css content-->
+                <div class="main-css">
+                    <text>
+                        <h1>CSS</h1>
+                    </text>
+                        <div class="text-css jquery">
+                            <h1>KHÁI QUÁT VỀ CSS</h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <h2>CSS là gì cách nhúng mã CSS vào HTML</h2>
+                                    <p>Khái niệm về CSS, sử dụng các cách nhúng mã CSS vào văn bản HTML như viết CSS trực tiếp, viết CSS trong một file riêng biệt</p>
+                                    <h3>CSS là gì?</h3>
+                                    <div class="drop-down-text">
+                                        <ul>
+                                            <li>
+                                                <p>CSS viết tắt của cụm từ Cascading Style Sheets, 
+                                                về ngữ nghĩa thì có thể hiểu: Cascading là cách làm việc của CSS, 
+                                                các CSS tác dụng vào phần tử HTML có thể bị đè (định nghĩa lại) 
+                                                bởi CSS khác hoặc kết hợp cùng với CSS khác. 
+                                                Còn Style Sheets điều khiển cách hiện thị nội dung trang web.
+                                                </p>
+                                            </li>
+                                            <li style="padding: 20px;font-weight: 600;background: #e6eeff80;color: #0f1111;border-radius: 10px;">
+                                                <strong>Ví dụ:</strong>
+                                                <p style="color:#0f1111;margin:10px"> CSS định nghĩa màu chữ đỏ cho phần tử <code class="code">p></code> đặt ở một file <code class="code">css></code>, thì ở file <code class="code">css></code> khác nó có thể định nghĩa lại thành màu xanh, hoặc cho thêm thuộc tính là chữ đậm, kết quả cuối cùng là sự kết hợp của 2 định nghĩa CSS (thuộc tính trước định nghĩa chỗ này có thể ghi đè hoặc bổ xung bởi thuộc tính định nghĩa ở chỗ khác). Đó là ý nghĩa của từ <code class="code">Cascading></code>. Khi làm việc với CSS bạn sẽ dần lĩnh hội được khái niệm này.</code>
+                                            </li>
+                                            <li>
+                                                <p>CSS và HTML luôn đi cùng nhau:<strong style="color:#c22c72">HTML</strong> tạo ra cấu trúc, nội dung các phần tử trong trang, CSS quy định cách hiện thị phần tử trên trang.</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                                <div class="drop-down">
+                                    <h3>Tại sao cần dùng CSS?</h3>
+                                    <div class="drop-down-text">
+                                        <ul>
+                                            <li>
+                                                <p><strong>CSS </strong>cho phép bạn định nghĩa kiểu, cách hiện thị cho các phần tử HTML. Giúp bạn phân tách giữa nội dung trang và cách trình bày trang. Nếu chỉ sử dụng HTML thì định dạng phần tử, kiểu phần tử phải ở cùng một vị trí với phần tử trong văn bản, điều này rất khó để bảo trì khi trang web phức tạp nên. Khi sử dụng CSS thì các định đạng được loại bỏ khỏi văn bản HTML, định dạng được lưu vào một file CSS.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                                <div class="drop-down">
+                                    <h3>Nhúng CSS vào HTML</h3>
+                                    <div class="drop-down-text">
+                                        <ul>
+                                            <li>
+                                                <p>Để áp dụng CSS tác dụng vào các phần HTML có ba cách nhúng CSS: , Internal và External</p>
+                                            </li>
+                                            <ul class="table-list">
+                                                <li class="table-list-child">
+                                                    <strong>Inline:</strong> mã CSS viết tại thuộc tính style của phần tử HTML
+                                                </li>
+                                                <li class="table-list-child">
+                                                    <strong>Internal: </strong>  mã CSS trong chính văn bản HTML, nằm trong khối thẻ <code class="code">style> </code>
+                                                </li>
+                                                <li class="table-list-child">
+                                                    <strong>External:</strong> mã CSS ở một file riêng biệt sau đó nạp vào HTML bằng phần tử <code class="code">link></code>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <li><h2 style="margin:10px auto;">Nhúng CSS dạng inline - thuộc tính style</h2>
+                                                    <p>Cách này là đặt mã <code>CSS</code> vào thẳng thuộc tính <code>style</code> của phần tử. Mã CSS chỉ tác động nên chính phần tử đó.</p>
+                                                    <p><strong>VD:</strong> Chúng ta điều chỉnh màu của icon trực tiếp trong thẻ i</p>
+                                                    <img src="./image/vd1.jpg">
+                                                    <p style="margin:10px auto;">Và đây là kết quả:</p>
+                                                    <img src="./image/kq1.jpg">
+                                                    <h2 style="margin:10px auto;">Nhúng CSS dạng Internal - thẻ style</h2>
+                                                    <p>Cách này bạn sẽ dùng thẻ <code class="code">style></code>, tạo ra khu vực để viết CSS, bạn có thể để bất kỳ đâu trong HTML, nhưng nên đặt trong thẻ <code class="code">head></code></p>
+                                                    <p><strong>VD:</strong> Đây là cách thứ 2 nhúng CSS dạng Internal - thẻ style trong thẻ <code class="code">head></code></p>
+                                                    <img src="./image/vd2.jpg">
+                                                    <p style="margin:10px auto;">Và đây là kết quả:</p>
+                                                    <img src="./image/kq2.jpg">
+                                                    <h2 style="margin:10px auto;">Nhúng CSS dạng External - thẻ link tải file CSS</h2>
+                                                    <p>Cách này các mã CSS bạn viết tập trung vào một file độc lập với file HTML (thường đặt phần mở rộng là <code>css</code> ) sau đó dùng thẻ <code>link</code> đặt ở phần head để nạp vào theo cú pháp, ví dụ file ngoài là <code>style.css</code></p>
+                                                    <img src="./image/vd3.jpg">
+                                                    <img style="margin-left: 100px;" src="./image/kq3.jpg">
+                                                    <p>Kết quả sẽ tương tự như ví dụ trên, chỉ có điều mã CSS đã đặt ra một file độc lập. Thuộc tính href trỏ đến địa chỉ URL của file CSS, ở ví dụ trên là địa chỉ dạng tương đối vì file CSS và HTML cùng thư mục.</p>
+                                                </li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>   
+                            </div> 
+
+                            <!--text-->
+
+                            <h1>SELECTOR CSS</h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <h2>Selector chọn phần tử trong CSS</h2>
+                                    <p>Cú pháp cơ bản trong CSS, lựa chọn phần tử HTML với CSS, chọn theo id, chọn theo class và các chú thích CSS</p>
+                                    <h3>Cú pháp CSS</h3>
+                                    <div class="drop-down-text">
+                                        <ul>
+                                            <li>
+                                                <p>CSS được viết với quy tắc về <i class="red">style</i> nhằm giúp cho trình duyệt tương tác được và áp kiểu thích hợp cho các phần tử trong HTML<br/>
+
+                                                    Quy tắc về <i class="red">style</i> có ba thành phần: <i class="red">selector</i>, <i class="red">property</i>, <i class="red">value</i>
+                                                    (phần tử chọn, thuộc tính, giá trị thuộc tính)
+                                                </p>
+                                            </li>
+                                            <li style="border-left: 5px solid rgb(255, 0, 0); padding:10px;background:#999999;color:#0f1111;;">
+                                                <strong>selector {property: value}</strong>
+                                            </li>
+                                            <p><strong>VD:</strong></p>
+                                            <li style="border-left: 5px solid rgb(158, 118, 72);padding:10px;background:#999999;color:#0f1111;;">
+                                                h1 { color: orange; }
+                                            </li>
+                                            <p style="margin:10px auto;">
+                                                Ở vị dụ trên các thành phần đó là:
+                                                <ul>
+                                                    <li style="color:#fff">• <i class="red">h1</i> là <i class="red">selector</i> - phần tử chọn để thiết lập các thuộc tính CSS cho nó</li>
+                                                    <li style="color:#fff">• <i class="red">color</i> là thuộc tính (property)</li>
+                                                    <li style="color:#fff">• <i class="red">orange</i> là giá trị (value) được thiết lập cho thuộc tính</li>
+                                                </ul>
+                                            </p>
+                                            <p><i>Diễn giải ra CSS trên có nghĩa là: các phần tử h1 trong HTML được thiết lập màu chữ là màu cam.</i></p>
+                                    </div>
+                                    <div class="drop-down">
+                                        <h3>Chọn phần tử trong CSS</h3>
+                                        <div class="drop-down-text">
+                                            <h2>selector</h2>
+                                            <ul>
+                                                <li>
+                                                    <p>Thành phần <i class="red">selector</i> chỉ ra phần tử HTML mà bạn muốn định nghĩa kiểu, chọn phần tử có thể là một phần tử hoặc nhiều phần tử cách nhau bằng dấu ,
+                                                    <br/>
+                                                    Thiết lập nội dung style bằng cặp thuộc tính:giá trị (cách nhau bởi dấu :), mỗi cặp này kết thúc bởi ;</p>
+                                                </li>
+                                                <li style="border-left: 5px solid rgb(158, 118, 72);padding:10px;background:#999999;color:#0f1111;;">
+                                                    h1, h2 <h7 style="margin-left:5px">{</h7><br/>
+                                                        <h7 style="margin-left:25px">color: orange; </h7><br/>
+                                                        <h7 style="margin-left:25px">font-size: 25px;</h7><br/>
+                                                    }
+                                                </li>
+                                                <p><i>Ở mã CSS trên, chọn phần tử h1, h2 của HTML và thiết lập màu chữ của 2 loại phần tử này là màu cam, cỡ chữ là 25px</i></p>
+                                            </ul>
+                                            <h2>id và selector</h2>
+                                            <p>Chọn phần tử bằng <i class="red">id</i> của phần tử, cách này áp dụng nếu phần tử HTML có thiết lập thuộc tính id, ví dụ HTML sau có phần tử div với id là <i class="red">intro</i></p>
+                                            <li style="border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                                <code class="code">div <a style="color:#720eff">id</a>=<a style="color:rgb(8, 255, 49)">"intro"</a>></code><br/>
+                                                    <h7 style="margin-left:25px"><code class="code">p></code><a style="color:#ffffff"> Văn bản trong intro.</a><code class="code">/p></code></h7><br/>
+                                                    <code class="code">/div></code><br/>
+                                                <code class="code">p></code><a style="color:#ffffff"> Đoạn văn bản ngoài intro.</a><code class="code">/p></code>
+                                                }
+                                            </li>
+                                            <p>Lúc đó <i class="red">CSS</i> chọn đến phần tử có id là <i class="red">introl</i> sẽ như sau:</p>
+                                            <li style="border-left: 5px solid rgb(158, 118, 72);padding:10px;background:#999999;color:#0f1111;;">
+                                                #intro <h7 style="margin-left:5px">{</h7><br/>
+                                                    <h7 style="margin-left:25px">color: white; </h7><br/>
+                                                    <h7 style="margin-left:25px"> background-color: green;</h7><br/>
+                                                }
+                                            </li>
+                                            <p style="background:green;color:white">Văn bản trong intro.</p>
+                                            <p>Đoạn văn ngoài intro.</p>
+                                            <h2>Chọn phần tử con trong CSS</h2>
+                                            <p>Selector trong CSS cũng cho phép chọn ra cụ thể một phần tử nằm trong một phần tử khác. Chọn kiểu này bằng cách chỉ ra các phần tử cha theo cấp, dần dẫn đến phần tử chọn bên trong.</p>
+                                            <p>Ví dụ chọn phần tử <code class="code">em></code> trong đoạn văn <i class="red">p</i> đầu tiên của khối <i class="red">introl</i></p>
+                                            <li style="border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                                <code class="code">div <a style="color:#720eff">id</a>=<a style="color:rgb(8, 255, 49)">"intro"</a>></code><br/>
+                                                    <h7 style="margin-left:25px"><code class="code">p <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"text"</a>></code><a style="color:#ffffff"> Văn bản <code style="color:#c22c72" class="code">em></code>trong intro.<code style="color:#c22c72" class="code">/em></code></a><code class="code">/p></code></h7><br/>
+                                                    <h7 style="margin-left:25px"><code class="code">p></code><a style="color:#ffffff"> Văn bản </code></code>trong intro.</a><code class="code">/p></code></h7><br/>
+                                                    <code class="code">/div></code><br/>
+                                                <code class="code">p></code><a style="color:#ffffff"> Đoạn văn bản ngoài intro.</a><code class="code">/p></code><br/>
+                                                <h7 style="margin-left:25px"><code class="code">p <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"text"</a>></code><a style="color:#ffffff"> Đoạn văn ngoài intro.</a><code class="code">/p></code></h7><br/>
+                                                }
+                                            </li>
+                                            <p>Lúc này dùng CSS chọn phần tử id là <i class="red">#introl</i> và class <i class="red">.text</i> và thẻ <i class="red">em</i> để viết CSS như sau:</p>
+                                            <li style="border-left: 5px solid rgb(158, 118, 72);padding:10px;background:#999999;color:#0f1111;;">
+                                                #intro .text em <h7 style="margin-left:5px">{</h7><br/>
+                                                    <h7 style="margin-left:25px">color: #c22c72; </h7><br/>
+                                                    <h7 style="margin-left:25px">font-size: 40px; </h7><br/>
+                                                    <h7 style="margin-left:25px"> background-color: #a4a2a7;</h7><br/>
+                                                }
+                                            </li>
+                                            <p><strong>KẾT QUẢ:</strong></p>
+                                            <p  style="font-size:40px;color:#c22c72">Văn bản<em style="background-color: #a4a2a7;"> trong intro.</em></p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="drop-down">
+                                        <h3>Comment trong CSS</h3>
+                                        <div class="drop-down-text">
+                                            <ul>
+                                                <li>
+                                                    <p>Các chú thích comment, dùng để mô tả cho code để sau này đọc lại dễ hiểu hơn. Các chú thích được trình duyệt bỏ qua.
+                                                        <br/>
+                                                        Viết chú thích trong CSS có dạng</p>
+                                                        <li style="border-left: 5px solid rgb(158, 118, 72);padding:10px;background:#999999;color:#0f1111;;">
+                                                        /* Comment */
+                                                        </li>
+                                                    <p><strong>VD:</strong></p>
+                                                    <li style="border-left: 5px solid rgb(158, 118, 72);padding:10px;background:#999999;color:#0f1111;;">
+                                                        #intro .text em <h7 style="margin-left:5px">{</h7><br/>
+                                                            <h7 style="margin-left:25px">color: #c22c72; </h7><br/>
+                                                            <h7 style="margin-left:25px">font-size: 40px; </h7><br/>
+                                                            <h7 style="margin-left:25px"> background-color: #a4a2a7;</h7><br/>
+                                                            <h7 style="margin-left:25px">/* Đây là comment */ </h7><br/>
+                                                        }
+                                                    </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--End text-->
+
+                            <!--text-->
+
+                            <h1>CÁC ĐƠN VỊ TRONG CSS</h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <div class="drop-down">
+                                        <h2>Các đơn vị px em rem mm đo độ dài trong CSS</h2>
+                                        <p>Tìm hiểu các loại đơn vị tuyệt đối trong CSS như px, mm, cm và các đơn vị tương đối như em, rem để xác định kích thước rộng, cao, cỡ font ...</p>
+                                        <h3>Đơn vị kích thước (độ dài, lớn bé) trong CSS</h3>
+                                        <div class="drop-down-text">
+                                            <ul>
+                                                <li>
+                                                    <p>Các đơn vị về kích thước để xác định độ dài, ngắn, lớn, bé của các đối tượng liên quan đến kích thước - ví dụ như chiều cao phần tử 50px (50 pixel - điểm ảnh) hoặc chiều cao phần tử là 30em. Có hai loại đơn vị sử dụng trong CSS - loại đơn vị tuyệt đối và đơn vị độ dài tương đối.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <h3>Đơn vị kích thước tuyệt đối trong CSS</h3>
+                                        <div class="drop-down-text">
+                                            <ul>
+                                                <li>
+                                                    <p>Những loại đơn vị này thì giá trị của nó độc lập không liên quan đến các phần tử thành phần khác, dùng đơn vị này ở trong HTML thì kích cỡ đo được đều giống nhau. Dưới đây là những đơn vị tuyệt đối hay dùng:</p>
+                                                </li>
+                                                <table class="table body-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Ký hiệu Đơn vị</th>
+                                                            <th>Ý nghĩa</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i style="text-align: center;" class="red">cm</i></td>
+                                                            <td>centimet (dài bằng 1/100 m)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i style="text-align: center;" class="red">mm</i></td>
+                                                            <td>milimét (dài bằng 1/1000 m)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i style="text-align: center;" class="red">in</i></td>
+                                                            <td>Inche: 1in = 2.54cm = 96px</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i style="text-align: center;" class="red">px</i></td>
+                                                            <td>Điểm ảnh (10px là 10 điểm ảnh màn hình)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i style="text-align: center;" class="red">pt</i></td>
+                                                            <td>Điểm (point), đây là đơn vị phổ biến dùng biểu diễn kích thước font chữ (72pt = 1inch = 25.4mm) hay 1pt = (1/72)in</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>Bạn có quyền sử dụng bất kỳ đơn vị nào, tuy nhiên phổ biến để thể hiện trên màn hình là đơn vị <i class="red">px</i>, các đơn vị tuyệt đối khác như <i class="red">cm</i> phù hợp để thể hiện trang in.</p>
+                                            </ul>                               
+                                        </div>
+
+                                        <h3>Đơn vị kích thước tương đối trong CSS</h3>
+                                        <div class="drop-down-text">
+                                            <ul>
+                                                <li>
+                                                    <p>Khi dùng các đơn vị tương đối thì độ lớn thực tế phụ thuộc vào thành phần khác, thường là phụ thuộc vào thuộc tính phần tử cha trong HTML hoặc phụ thuộc vào kích thước viewport (kích thước cửa sổ hiện tại của trình duyệt). Lợi ích của đơn vị này là nó tự động thu phóng độ lớn (chiều dài, font chữ) theo phần tử cha</p>
+                                                    <table class="table body-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Ký hiệu Đơn vị</th>
+                                                                <th>Ý nghĩa</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i style="text-align: center;" class="red">em</i></td>
+                                                                <td>
+                                                                    Bằng cỡ font của phần tử cha. Có nghĩa phần tử cha có cỡ (font-size) là 14px, thì 1em là 14px - nếu cỡ font phần tử cha là 10pt thì 2em là 20px.
+                                                                    <li style="margin-top:10px;border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                                                        <code class="code">div <a style="color:#02ff81ca">style </a>=<a style="color:rgb(221, 243, 225)">"font-size: 20px"</a>></code><br/>
+                                                                        <h7 style="margin-left:25px;font-size: 14px;"><a style="color:#ffffff"> font-size phần tử cha 30px </a></h7><br/>
+                                                                        <code style="margin-left:25px" class="code">div <a style="color:#02ff81ca;">style </a>=<a style="color:rgb(221, 243, 225)">"font-size: 0.5em"</a>></code><br/>
+                                                                        <h7 style="margin-left:55px;font-size: 14px;"><a style="color:#ffffff"> Cỡ font thiết lập 1em (bằng nửa phần tử cha) </a></h7><br/>
+                                                                        <code style="margin-left:25px;" class="code">/div></code><br/>
+                                                                        <code class="code">/div></code><br>
+                                                                    </li>
+                                                                    <p style="font-size:30px;color:#121322;">font-size phần tử cha 20px</p>
+                                                                    <p style="font-size: 1em;color:#121322;">Cỡ font thiết lập 0.5em (bằng nửa phần tử cha)</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i class="red">rem</i></td>
+                                                                <td>
+                                                                    Bằng cỡ font của phần tử gốc - root, trong CSS để thiết lập các thuộc tính của root thì dùng ký hiệu :root, rồi định nghĩa các thuộc tính giống class:
+                                                                    <li style="border-left: 5px solid rgb(158, 118, 72);padding:10px;background:#121322;color:#c22c72;">
+                                                                        :root <h7 style="margin-left:5px">{</h7><br/>
+                                                                            <h7 style="margin-left:25px;color:rgb(221, 243, 225)">font-size: 16px; </h7><br/>
+                                                                            <h7 style="margin-left:25px;color:rgb(221, 243, 225)">color: #333;</h7><br/>
+                                                                        }
+                                                                    </li>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i class="red">lh</i></td>
+                                                                <td>Bằng chiều cao dòng phần tử cha</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i class="red">vw</i></td>
+                                                                <td>Bằng 1% chiều rộng cửa sổ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i class="red">vh</i></td>
+                                                                <td>Bằng 1% chiều cao cửa sổ</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                 
+                </div>
+            </div>
+            
+            <!--End section main-content-css-->
+
+            <!--Star section main-content-jquery-->
+            <div id="css" class="main-content">
+                <!--Star main-css content-->
+                <div class="main-css">
+                    <text>
+                        <h1>JQUERY</h1>
+                    </text>
+                        <div class="text-css jquery">
+                            <h1>GIỚI THIỆU JQUERY</h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <h2>Giới thiệu về jQuery, cú pháp cơ bản và tích hợp</h2>
+                                    <p>Cơ bản về thư viện jQuery và cách tích hợp jQuery vào website, cú pháp cơ bản sử dụng jQuery</p>
+                                    <h3>jQuery là gì?</h3>
+                                    <div class="drop-down-text">
+                                        <ul>
+                                            <li>
+                                                <p><strong><i class="red">jQuery</i></strong> là một thư viện JavaScript nhỏ gọn, chạy nhanh. jQuery giải quyết các vấn đề tương tác với HTML, bắt sự kiện, hiệu ứng động ... trở lên rất đơn giản.</p>
+                                                <p>Mọi tính năng của <strong><i class="red">jQuery</i></strong> thực ra nó bao bọc các lệnh, hàm của JavaScript nên để hiểu <strong><i class="red">jQuery</i></strong> bạn cần hiểu về <strong><i class="red">jQuery</i></strong> cơ bản cũng như <strong><i class="red">jQuery</i></strong> cơ bản trước.</p>
+                                                <p>Các tính năng chính jQuery cung cấp gồm:</p>
+                                                <ul>
+                                                    <li style="color:#1866a9;font-size:20px;margin-left:20px">• Tương tác với HTML/DOM</li>
+                                                    <li style="color:#1866a9;font-size:20px;margin-left:20px">• Tương tác với CSS</li>
+                                                    <li style="color:#1866a9;font-size:20px;margin-left:20px">• Bắt và xử lý sự kiện HTML</li>
+                                                    <li style="color:#1866a9;font-size:20px;margin-left:20px">• Các hiệu ứng và chuyển động trong HTML</li>
+                                                    <li style="color:#1866a9;font-size:20px;margin-left:20px">• AJAX (Asynchronous JavaScript and XML)</li>
+                                                    <li style="color:#1866a9;font-size:20px;margin-left:20px">• JSON parsing</li>
+                                                    <li style="color:#1866a9;font-size:18px;margin-left:20px">• Các tiện ích xây dựng sẵn</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <h3>Tại sao nên chọn jQuery</h3>
+                                    <div class="drop-down-text">
+                                        <ul>
+                                            <li>
+                                                <p>Hiện nay có nhiều JavaScript Framework xuất hiện nhưng <strong><i class="red">jQuery</i></strong> vẫn là Framework phổ biến nhất và nhiều thành phần mở rộng cài thêm (extend). Nhiều công ty công nghệ lớn sử dụng jQuery như Google, Microsoft, IBM, Netflix ...</p>
+                                                <p>Ngoài ra <strong><i class="red">jQuery</i></strong> còn tương thích với nhiều trình duyệt khác nhau thậm chí là IE6, bạn thật sự không cần bận tâm nhiều về việc code của mình không chạy được trên các trình duyệt khác nhau.</p>
+                                            
+                                            </li>
+                                        </ul>
+                                    </div>  
+
+                                    <h3>Cài đặt - tích hợp jQuery vào Website</h3>
+                                    <div class="drop-down-text">
+                                        <ul>
+                                            <li>
+                                                <p>Để sử dụng jQuery trong trang HTML, bạn cần đảm bảo trang HTML của mình load chính xác thư viện jQuery bằng cách sử dụng thẻ <code class="code">script></code> ở phần <code class="code">head></code> của HTML.</p>
+                                                <li style="margin-top:10px;border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                                    <code class="code">html></code><br/>
+
+                                                    <code style="margin-left:25px" class="code">head></code><br/>
+                                                    <h7 style="margin-left:55px;"><code class="code">script <a style="color:#0db61b"> src="file-jquery.js" </a>></code>></h7><br/>
+                                                    <code style="margin-left:25px;" class="code">/head></code><br/> 
+
+                                                    <code style="margin-left:25px" class="code">body></code><br/>
+                                                    <h7 style="margin-left:55px;"><a style="color:#ffffff"> .............. </a></h7><br/>
+                                                    <code style="margin-left:25px;" class="code">/body></code><br/>
+                                                    <code class="code">/html></code><br>
+                                                </li>
+                                                <p><strong>Cách 1 </strong>: tải về file <strong><i class="red">js</i></strong> thư viện tại <strong><a style="color:#5d0ae2;" href="https://jquery.com/download/">jQuery download</a></strong> (nên chọn bản đã nén có chữ .min.js), sau đó tích hợp vào trang bằng thẻ <code class="code">script></code>. Ví dụ: <code class="code">script></code> src="/public/jquery-3.1.1.min.js"><code class="code">/script></code></p>
+                                                <p><strong>Cách 2 </strong>: thay vì phải tải về file thư viện, bạn dùng luôn từ các CDN (Content Delivery Network) giúp cho trang tải nhanh hơn.</p>
+                                                <p><i>Dùng CDN Google</i> : Lấy link phiên bản jQuery tại <strong><a style="color:#5d0ae2;" href="https://developers.google.com/speed/libraries/">jQuery Google</a></strong>, sau đó tích hợp vào Website, ví dụ:</p>
+                                                <li style="margin-top:10px;border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                                    <h7><code class="code">script <a style="color:#0db61b"> src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"</a>><code class="code">/script></code></code>></h7>
+                                                </li>
+                                                <p><i>Dùng CDN Microsoft</i> : Lấy link phiên bản jQuery tại <strong><a style="color:#5d0ae2;" href="https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview#jQuery_Releases_on_the_CDN_0">jQuery Microsoft</a></strong>, sau đó tích hợp vào Website, ví dụ:</p>
+                                                <li style="margin-top:10px;border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                                    <h7><code class="code">script <a style="color:#0db61b"> src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"</a>><code class="code">/script></code></code>></h7>
+                                                </li>
+                                            </li>
+                                        </ul>
+                                    </div>  
+
+                                    <h3>Ví dụ về jQuery</h3>
+                                    <div class="drop-down-text">
+                                        <h2 style="margin-top:40px">Viết code đảm bảo HTML đã tải đầy đủ</h2>
+                                        <ul>
+                                            <li>
+                                                <p>Nói chung bạn có thể sử dụng các hàm của thư viện jQuery ở bất kỳ đâu trên trang, tuy nhiên cách tốt để thực hành là cần đảm bảo các mã sử dụng jQuery do bạn viết chỉ chạy sau khi toàn bộ trang HTML được tải đầy đủ. Để làm điều này thì bạn cần bắt sự kiện <strong><i class="red">ready</i></strong> của đối tượng <strong><i class="red">dcoument</i></strong></p>
+                                                <li style="border-left: 5px solid rgb(158, 118, 72);padding:10px;background:#121322;color:#0f1111;color:#fff">
+                                                    <a style="color:#00ff15">$ </a>(<a style="color:#1563a7">document</a>).<a style="color:#00ff15">ready</a>(<a style="color:#c22c72">function</a>() { <h7 style="margin-left:5px"></h7><br>
+                                                        <h7 style="margin-left:25px;color:rgb(245, 113, 66)">// Mã JavaScript / jQuery ở đây </h7><br>
+                                                    });
+                                                </li>
+                                                <p>Hoặc có thể viết gọn lại như sau:</p>
+                                                <li style="border-left: 5px solid rgb(158, 118, 72);padding:10px;background:#121322;color:#0f1111;color:#fff">
+                                                    <a style="color:#00ff15">$ </a> (<a style="color:#c22c72">function</a>() { <h7 style="margin-left:5px"></h7><br>
+                                                        <h7 style="margin-left:25px;color:rgb(245, 113, 66)">// Mã JavaScript / jQuery ở đây </h7><br>
+                                                    });
+                                                </li>
+                                                <p>Ký tự <a style="font-size:25px;color:#c22c72;font-weight:700">$</a> được dùng để truy cập jQuery.</p>
+                                                <p><strong>Ví dụ 2:</strong></p>
+                                                <p>Ví dụ sau sử dụng <strong>jQuery</strong> để khi trang tải xong thì tìm phần tử HTML có id là start, thay nội dung trong nó bằng chữ : GO!</p>
+
+                                                <li style="margin-top:10px;border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;color:#fff">
+                                                    <code class="code">!DOCTYPE <a style="color:#0db61b">html</a>></code><br/>
+                                                    <code class="code">html></code><br/>
+                                                    <code style="margin-left:25px" class="code">head></code><br/>
+                                                    <code style="margin-left:25px" class="code">title></code>Page Title<code class="code">/title></code><br/> 
+                                                    <h7 style="margin-left:25px;"><code class="code">script <a style="color:#0db61b"> src="https://code.jquery.com/jquery-3.1.1.js"</a></code>></h7><br/>
+
+                                                    <h7 style="margin-left:25px;"><code class="code">script></code></h7><br/>
+                                                        <a style="color:#00ff15;margin-left:55px;">$ </a> ( <a style="color:#c22c72">function</a>( ) { <h7 style="margin-left:5px"></h7><br>
+                                                        <a style="color:#00ff15;margin-left:80px;">$ </a> (<a style="color:rgb(245, 113, 66)">"#start"</a>).<a style="color:#0db61b">html(</a><a style="color:rgb(245, 113, 66)">"#Go!"</a>)<h7 style="margin-left:5px"></h7><br>
+                                                    <a style="margin-left:55px">});</a><br/>
+                                                    <h7 style="margin-left:25px;"><code class="code">script/></code></h7><br/>
+                                                    <br/>
+                                                    <code style="margin-left:25px" class="code">head/></code><br/>
+                                                    <code style="margin-left:25px" class="code">body></code><br/>
+                                                    <h7 style="margin-left:55px;"><a style="color:#ffffff">
+                                                        <code style="margin-left:25px;color:#c22c72" class="code">div</code> <a style="color:#00ff15">id="start"</a>>Start<code class="code">div/></code>
+                                                    </a></h7><br/>
+                                                    <code style="margin-left:25px;" class="code">/body></code><br/>
+                                                    <code class="code">/html></code><br>
+                                                </li>
+                                                <p>Cách tốt hơn là mã JavaScript bạn nên viết trên một file ví dụ file <strong>yourjs.js</strong> rồi tải vào trang</p>
+                                                <li style="margin-top:10px;border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;color:#fff">
+                                                    <code class="code">!DOCTYPE <a style="color:#0db61b">html</a>></code><br/>
+                                                    <code class="code">html></code><br/>
+                                                    <code style="margin-left:25px" class="code">head></code><br/>
+                                                    <code style="margin-left:25px" class="code">title></code>Page Title<code class="code">/title></code><br/> 
+                                                    <h7 style="margin-left:25px;"><code class="code">script <a style="color:#0db61b"> src="https://code.jquery.com/jquery-3.1.1.js"</a></code>></h7><br/>
+
+                                                    <h7 style="margin-left:25px;"><code class="code">script <a style="color:#0db61b"> src="yourjs.js"</a></code>></h7><br/>
+
+                                                       
+                                                    <br/>
+                                                    <code style="margin-left:25px" class="code">head/></code><br/>
+                                                    <code style="margin-left:25px" class="code">body></code><br/>
+                                                    <h7 style="margin-left:55px;"><a style="color:#ffffff">
+                                                        <code style="margin-left:25px;color:#c22c72" class="code">div</code> <a style="color:#00ff15">id="start"</a>>Start<code class="code">div/></code>
+                                                    </a></h7><br/>
+                                                    <code style="margin-left:25px;" class="code">/body></code><br/>
+                                                    <code class="code">/html></code><br>
+                                                  
+                                                </li>
+
+                                                <p>Lúc đó code JavaScript / jQuery viết trong <strong>yourjs.js</strong></p>
+                                                <li style="margin-top:10px;border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;color:#fff">
+                                                    <h7 style="margin-left:25px;"><code class="code">script></code></h7><br/>
+                                                        <a style="color:#00ff15;margin-left:55px;">$ </a> ( <a style="color:#c22c72">function</a>( ) { <h7 style="margin-left:5px"></h7><br>
+                                                        <a style="color:#00ff15;margin-left:80px;">$ </a> (<a style="color:rgb(245, 113, 66)">"#start"</a>).<a style="color:#0db61b">html(</a><a style="color:rgb(245, 113, 66)">"#Go!"</a>)<h7 style="margin-left:5px"></h7><br>
+                                                    <a style="margin-left:55px">});</a><br/>
+                                                </li>
+                                                <p>Phương thức <strong>html()</strong> của jQuery dùng để thay đổi nội dung phần tử.</p>
+                                            </li>
+                                        </ul>
+                                    </div>  
+
+                                    <h3>Cú pháp jQuery</h3>
+                                    <div class="drop-down-text">
+                                        <ul>
+                                            <li>
+                                                <p>Khi sử dụng <i class="red">jQuery</i>, bạn cần <strong>chọn các phần tử(<i>query</i>) sau đó thực hiện các hành động trên chúng</strong>, điều này được thể hiện bằng cú pháp sử dụng <i class="red">jQuery</i>,:</p>
+                                                <strong style="color:#fff;margin-left:40px">$("selector").action()</strong>
+                                                <ul style="color:#fff;margin-left:40px; margin-top:30px;">
+                                                    <li>• <i class="red">$</i> là ký hiệu cho biết bạn truy cập jQuery</li>
+                                                    <li>• <i class="red">(selector)</i> phần tìm phần tử HTML, theo cách chọn phần tử như đã biết trong CSS. Ví dụ chọn tất cả các phần tử p là $('p'), ví dụ chọn phần tử có id là examp là $('#examp'), ví dụ chọn các phần tử có class là examclass là $('.examclass')</li>
+                                                    <li>• <i class="red">action()</i>action() là các hành động trên phần tử đã chọn, là các hàm mà jQuery cung cập, bạn sẽ học dần các hàm này</li>
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                    </div>  
+                                </div>
+                            </div>
+                    </div>                 
+                </div>
+            </div>
+             <!--End section main-content-jquery-->
+
+            <!--Star section main-content-boostrap-->
+            <div id="css" class="main-content">
+                <!--Star main-css content-->
+                <div class="main-css">
+                    <text>
+                        <h1>BOOSTRAP</h1>
+                    </text>
+                        <div class="text-css jquery">
+                            <h1>XÂY DỰNG LAYOUT VỚI BOOSTRAP</h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <p style="font-size:25px; font-weight:600">Tìm hiểu về hệ thống lưới (grid) gồm các hàng và cột để xây dựng nên giao diện cơ bản, cách tạo hàng, cột, định dạng cột của một layout</p>
+                                    <p>Phần này chúng ta tìm hiểu một số class:</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="col-3 red">breakpoint</td>
+                                                        <td class="col-9 red">sm md lg xl</td>                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.container</td>
+                                                        <td class="col-9">Lớp tạo phần tử chứa layout</td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.row</td>
+                                                        <td class="col-9">Lớp tạo hàng của lưới</td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.col</td>
+                                                        <td class="col-9">Lớp tạo cột của lưới</td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.col-*</td>
+                                                        <td class="col-9"><h7 class="red"> = (1 - 12)</h7>*, lớp tạo cột có độ rộng cụ thể như <h7 class="red">.col-1, .col-2</h7> ... hiệu lực cho tất cả các <h7 class="red">breakpoint</h7></td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.col-{breakpoint}-*</td>
+                                                        <td class="col-9"><h7 class="red"> = (1 - 12)</h7> Lớp tạo cột có độ rộng cụ thể như <h7 class="red">.col-1, .col-2</h7> ... hiệu lực với <h7 class="red">breakpoint</h7> cụ thể</td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.col-{breakpoint}-auto .col-auto</td>
+                                                        <td class="col-9">Cột có độ rộng điều chỉnh theo nội dung nó chứa</td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.<h7 class="red">align-items</h7>{-breakpoint}-*</td>
+                                                        <td class="col-9">Thiết lập thuộc tính align-items của flexbox</td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.align-content{-breakpoint}-*</td>
+                                                        <td class="col-9">Thiết lập thuộc tính <h7 class="red">justify-content</h7> của flexbox</td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.justify-content{-breakpoint}-*</td>
+                                                        <td class="col-9">Thiết lập thuộc tính <h7 class="red">align-content</h7> của flexbox</td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3 red">.align-self{-breakpoint}-*</td>
+                                                        <td class="col-9">	Thiết lập thuộc tính <h7 class="red">align-self</h7> của flexbox</td>   
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                
+                                </div>                    
+                            </div>
+
+                            <h1>Phần tử chứa để xây dựng bố cục layout - các breakpoint</h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <p>Trong <h7 class="red">Bootstrap</h7> phần tử gốc cơ bản để xây dựng layout là class <h7 class="red">container</h7> và <h7 class="red">container-fluid</h7>, mục đích của nó là tạo ra vùng chữ nhật để chứa các phần tử khác. Tạo ra một phần tử gốc layout như sau:</p>
+                                    <li style="border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                        <code class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"container"</a>&gt;</code><br>
+                                            <h7 style="margin-left:25px">
+                                                <a style="color:#ffffff"> <code class="code">!--Code HTML--></code></a></h7><br>
+                                            <code class="code">/div&gt;</code><br/>                                        }
+                                    </li>
+                                    <p>Mục đích sử dụng class <h7 class="red">container</h7> để tạo ra một vùng chữ nhật mà chiều rộng của nó thiết lập phụ thuộc vào kích thước màn hình hiện thị.</p>
+                                    <p>Màn hình hiện thị tác động đến <h7 class="red">container</h7> được chia thành các loại:</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Chiều rộng màn hình</th>
+                                                        <th>Độ rộng lớn của container</th>
+                                                        <th>Ký hiệu nhận biết</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code style="color:rgb(0, 0, 0)" class="code">576px (rất nhỏ)</code></td>
+                                                        <td class="red"><code class="red" style="color:rgb(8, 8, 8)">576px</code></td>  
+                                                        <td class="red">xs</td>                                                     
+                                                    </tr>
+                                                    <tr>
+                                                        <td>≥576px và <code class="code" style="color:rgb(0, 0, 0)">768 (nhỏ)</code></td>
+                                                        <td>540px</td>   
+                                                        <td class="red">sm</td>
+                                                    </tr>                                   
+                                                    <tr>
+                                                        <td>≥768px và <code class="code" style="color:rgb(0, 0, 0)">992px (trung bình)</code></td>
+                                                        <td>720px</td>   
+                                                        <td class="red">md</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>≥992px và <code class="code" style="color:rgb(0, 0, 0)">1200px (lớn)</code></td>
+                                                        <td>960px></td>   
+                                                        <td class="red">lg</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>≥1200px</td>
+                                                        <td>1140px</td>   
+                                                        <td class="red">xl</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p>Ví dụ, một phần tử sử dụng <h7 class="red">container</h7> khi ở màn hình có độ rộng <h7 class="red">840px</h7>, nhìn vào bảng trên nó thuộc <h7 class="red">md</h7>, nó sẽ hiện thị là một cái hộp chữ nhật có độ rộng lớn nhất là <i class="red">720px</i> (nghĩa là rộng có thể thay đổi từ <i class="red">0px</i> đến <i class="red">720px</i> tùy thuộc vào không gian cho phép container mở rộng)</p>
+                                    <p>Container chia theo các điểm dừng, đó là các <h7 class="red">breakpoint : sm, md, lg, xl</h7></p>
+                                    <p>Trong trường hợp sử dụng <h7 class="red">container-fluid</h7> thì hộp layout tạo ra luôn mở rộng tối đa có thể dù trên loại màn hình nào.</p>
+                                </div>
+
+                            </div>
+                            
+                            <h1>Hệ thống lưới (grid) trong Bootstrap</h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <p>Bootstrap sử dụng container và các lớp về dòng (row), cột (colunm) phối hợp với nhau để tạo ra một hệ thống lưới giao diện. Trước tiên cần biết là những phần tử hàng, cột sử dụng kỹ thuật CSS <h7 class="red">flexbox</h7> để xây dựng.</p>
+                                    <p>Lưới layout được tạo ra từ các hàng bằng cách sử dụng class <h7 class="red">.row</h7>, trong hàng các phần tử con tạo thành cột (hàng) bằng cách sử dụng class có tiền tố là <h7 class="red">.col-, .col-sm-, .col-md-, .col-lg-, .col-xl-</h7></p>
+                                    <p>Các lớp này được chia ra với tiền tố như vậy để ám chỉ nó có hiệu lực đối với những màn hình cụ thể như bảng sau:</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="text-center">
+                                                            Màn hình rất nhỏ<br>
+                                                            <small>&lt;576px</small>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Màn hình nhỏ<br>
+                                                            <small>≥576px</small>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Trung bình<br>
+                                                            <small>≥768px</small>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Lớn<br>
+                                                            <small>≥992px</small>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Rất lớn<br>
+                                                            <small>≥1200px</small>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                
+                                                    <tr>
+                                                        <td><code>.col-</code></td>
+                                                        <td><code>.col-sm-</code></td>
+                                                        <td><code>.col-md-</code></td>
+                                                        <td><code>.col-lg-</code></td>
+                                                        <td><code>.col-xl-</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="5">Một hàng có độ rộng chia làm <code>12</code> phần, từ đó mỗi tiền tố có 12 lớp, ví dụ từ <code>.col-sm-1</code> đến <code>.col-sm-12</code>, nếu sử dụng class <code>.col-sm-2</code> có nghĩa là cột đó có động rộng chiếu 2/12 của độ rộng cột</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="5">Khoảng cách giữa các cột là 30px (15px mỗi bên), nếu muốn thiết lập về 0 sử dụng thêm lớp <code>.</code></td>
+                                                    </tr>
+                                                
+                                                    </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1>Chia hàng thành nhiều cột với <h7 style="font-size:40px" class="red">.col</h7></h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <p>Do <h7 class="red">.col</h7> có thiết lập <h7 class="red">flex-grow: 1</h7> nên nó được dùng nếu muốn chia một hàng thành nhiều cột (bằng số phần tử sử dụng <h7 class="red">.col</h7>) có độ rộng bằng nhau, ví dụ:</p>
+                                    <li style="border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                        <code class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"container"</a>&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code class="code">div</code>&gt;<a style="color:#720eff">class</a> <h7 class="red"> =</h7><a style="color:rgb(8, 255, 49)">"row"</a><code>></code></h7><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col bg-danger"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 1</code>
+                                            <br/>
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col bg-info"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 2</code>
+                                            <br/>
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col bg-warning"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 3</code>
+                                            <br/>
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code>div/></code></h7><br>
+
+                                            <code class="code">/div&gt;</code><br>
+                                    </li>
+                                    <p>Kết quả:</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col bg-danger">
+                                                Cột 1
+                                            </div>
+                                            <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col bg-info">
+                                                Cột 2
+                                            </div>
+                                            <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col bg-warning">
+                                                Cột 3
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Nếu muốn thiết lập độ rộng riêng cho một cột nào đó thì sử dụng các phần tử từ <h7 class="red">col-1</h7> ... <h7 class="red">col-12</h7>, ví dụ nếu sử dụng <h7 class="red">col-6</h7> nó sẽ chiếm 6 phần của hàng (hàng chia làm 12 phần).</p>
+                                    <p>Ví dụ sau cột số 2 chiếm 6/12 độ rộng hàng, còn lại 6 phần chia đều cho 3 phần tử còn lại</p>
+                                    <li style="border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                        <code class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"container"</a>&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code class="code">div</code>&gt;<a style="color:#720eff">class</a> <h7 class="red"> =</h7><a style="color:rgb(8, 255, 49)">"row"</a><code>></code></h7><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col bg-danger"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 1</code>
+                                            <br/>
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col-6 bg-info"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 2 chiếm 6/12 cột</code>
+                                            <br/>
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col bg-warning"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 3</code>
+                                            <br/>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col bg-danger"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 4</code>
+                                            <br/>
+
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code>div/></code></h7><br>
+
+                                            <code class="code">/div&gt;</code><br>
+                                            <p>Kết quả:</p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col bg-danger">
+                                                        Cột 1
+                                                    </div>
+                                                    <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col-6 bg-info">
+                                                        Cột 2
+                                                    </div>
+                                                    <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col bg-warning">
+                                                        Cột 3
+                                                    </div>
+                                                    <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col bg-danger">
+                                                        Cột 4
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>Class <h7 class="red">.col, .col-1 ... .col-12</h7> có hiệu lực đối với tất cả các <h7 class="red">breakpoint</h7></p>
+                                    </li>
+                                </div>
+                            </div>
+
+                            <h1>Độ rộng các cột căn cứ theo nội dung của cột</h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <p>Các phần tử dùng <h7 class="red">.col</h7> như trên do ảnh hưởng của flexbox độ rộng của nó được thiết lập không phụ thuộc vào nội dung nó chứa. Nếu phần tử cột nào đó muốn trở lại điều chỉnh độ rộng theo nội dung thì sử dụng các class <h7 class="red">col-{breakpoint}-auto:</h7> như <h7 class="red">.col-auto</h7>, <h7 class="red">.col-sm-auto</h7> ...</p>
+                                    <li style="border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                        <code class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"container"</a>&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code class="code">div</code>&gt;<a style="color:#720eff">class</a> <h7 class="red"> =</h7><a style="color:rgb(8, 255, 49)">"row"</a><code>&gt;</code></h7><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col bg-danger"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 1</code>
+                                            <br>
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col-auto bg-info"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 2, độ rộng theo nội dung</code>
+                                            <br>
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col bg-warning"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 3</code>
+                                            <br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col bg-danger"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 4</code>
+                                            <br>
+
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code>div/&gt;</code></h7><br>
+
+                                            <code class="code">/div&gt;</code><br>
+                                            
+                                    </li>
+                                    <p>Kết quả:</p>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col bg-danger">
+                                                    Cột 1
+                                                </div>
+                                                <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col-auto bg-info">
+                                                    Cột 2, độ rộng theo nội dung
+                                                </div>
+                                                <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col bg-warning">
+                                                    Cột 3
+                                                </div>
+                                                <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col bg-danger">
+                                                    Cột 4
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <h1>Pha trộn nhiều breakpoint cho cột</h1>
+                            <div class="content-css">
+                                <div class="drop-down">
+                                    <p>Để đảm bảo tính responsive, căn cứ theo tính chất cascading của CSS, một cột có thể sử dụng nhiều loại class, từ đó mà tùy theo loại màn hình mà class nào có hiệu lực. Ví dụ sau, 2 cột khi ở màn hình nhỏ (breakpoint sm) thì độ rộng cột bằng 1/2 độ rộng hàng, nhưng khi ở màn hình độ rộng đó lại là 3/12 độ rộng hàng</p>
+                                    <li style="border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                        <code class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"container"</a>&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code class="code">div</code>&gt;<a style="color:#720eff">class</a> <h7 class="red"> =</h7><a style="color:rgb(8, 255, 49)">"row"</a><code>&gt;</code></h7><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col-sm-6 col-md-3 bg-danger"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 1</code>
+                                            <br>
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col-sm-6 col-md-3 bg-primary"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 2</code>
+                                            <br>
+
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code>div/&gt;</code></h7><br>
+
+                                            <code class="code">/div&gt;</code><br>
+                                            
+                                    </li>
+                                    <p>Kết quả:</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col-sm-6 col-md-3 bg-danger">
+                                                Cột 1
+                                            </div>
+                                            <div style="height:50px;line-height: 50px;text-align: center;color:#fff" class="col-sm-6 col-md-3 bg-primary">
+                                                Cột 2
+                                            </div>
+                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1>Align các cột</h1>
+                                <div class="content-css">
+                                    <div class="drop-down">
+                                        <p>Do <h7 class="red">.row</h7> sử dụng kỹ thuật <h7 class="red">flexbox</h7> nên có thể căn chỉnh các cột trong nó căn về phía nào đó mong muốn của hàng giống như trình bày trong phần <h7 class="red">flexbox</h7></p>
+                                        <p>Thiết lập ở cấp độ hàng (phần tử sử dụng <h7 class="red">.row</h7>) có các lớp điều chỉnh thuộc tính flexbox:</p>
+                                        <p style="color:#c22c72">.align-items{-breakpoint}-{start|end|center|baseline|stretch}</p>
+                                        <p style="color:#c22c72">.align-content{-breakpoint}-{start|end|center|beween|around|stretch}</p>
+                                        <p style="color:#c22c72">.justify-content{-breakpoint}-{start|end|center|beween|around}</p>   
+                                    </div>
+                                    <li style="border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                        <code class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"container"</a>&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code class="code">div</code>&gt;<a style="color:#720eff">class</a> <h7 class="red"> =</h7><a style="color:rgb(8, 255, 49)">"row align-items-md-end bg-success" style="height: 100px"</a><code>&gt;</code></h7><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col-sm-6 col-md-3 bg-danger"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 1</code>
+                                            <br>
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+
+                                            <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col-sm-6 col-md-3 bg-primary"</a>&gt;</code><br>
+                                            <code style="margin-left:100px;color:#fff">Cột 2</code>
+                                            <br>
+
+                                            <code style="margin-left:60px" class="code">/div&gt;</code><br>
+                                            <h7 style="margin-left:25px"><code>div/&gt;</code></h7><br>
+
+                                            <code class="code">/div&gt;</code><br>                            
+                                    </li>
+                                    <p>Kết quả:</p>
+                                    <div class="container">
+                                        <div class="row align-items-md-end bg-success" style="height: 100px">
+                                            <div style="height:30px;line-height: 30px;text-align: center;color:#fff" class="col-sm-6 col-md-3 bg-danger">
+                                                Cột 1
+                                            </div>
+                                            <div style="height:30px;line-height: 30px;text-align: center;color:#fff" class="col-sm-6 col-md-3 bg-primary">
+                                                Cột 2
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1>Align riêng từng cột</h1>
+                        <div class="content-css">
+                            <div class="drop-down">
+                                <p>Các lớp thiết lập thuộc tính flexbox cho riêng từng cột (phần tử) là:</p>
+                                <p style="color:#c22c72">.align-self{-breakpoint}-{auto|start|end|center|baseline|stretch}</p>
+                                <li style="border-left: 5px solid rgb(158, 118, 72);padding:20px;background:#121322;color:#0f1111;">
+                                    <code class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"container"</a>&gt;</code><br>
+                                        <h7 style="margin-left:25px"><code class="code">div</code>&gt;<a style="color:#720eff">class</a> <h7 class="red"> =</h7><a style="color:rgb(8, 255, 49)">"row align-items-md-end bg-success" style="height: 100px"</a><code>&gt;</code></h7><br>
+
+                                        <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col-sm-6 col-md-3 bg-danger"</a>&gt;</code><br>
+                                        <code style="margin-left:100px;color:#fff">Cột 1</code>
+                                        <br>
+                                        <code style="margin-left:60px" class="code">/div&gt;</code><br>
+
+                                        <code style="margin-left:60px" class="code">div <a style="color:#720eff">class</a>=<a style="color:rgb(8, 255, 49)">"col-sm-6 col-md-3 bg-primary"</a>&gt;</code><br>
+                                        <code style="margin-left:100px;color:#fff">Cột 2</code>
+                                        <br>
+
+                                        <code style="margin-left:60px" class="code">/div&gt;</code><br>
+                                        <h7 style="margin-left:25px"><code>div/&gt;</code></h7><br>
+
+                                        <code class="code">/div&gt;</code><br>                            
+                                </li>
+                                <p>Kết quả:</p>
+                                <div class="container">
+                                    <div class="row bg-success" style="height: 100px">
+                                        <div style="height:30px;line-height: 30px;text-align: center;color:#fff" class="col-sm-6 col-md-3 bg-danger align-self-sm-start">
+                                            Cột 1
+                                        </div>
+                                        <div style="height:30px;line-height: 30px;text-align: center;color:#fff" class="col-sm-6 col-md-3 bg-primary  align-self-sm-center">
+                                            Cột 2
+                                        </div>
+                                        <div style="height:30px;line-height: 30px;text-align: center;color:#fff" class="col-sm-6 col-md-3 bg-danger  align-self-sm-end">
+                                            Cột 3
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>  
+                </div>
+            </div>
+             <!--End section main-content-boostrap-->
+            
+
+    </section>
+    <!--End section main-content-jquery-->
+
+     <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+        <div class="containerss">
+            <div class="button">
+                <div class="icon">
+                    <i class="bx bxl-facebook" aria-hidden="true"></i>
+                </div>
+                <span>Facebook</span>
+            </div>
+        
+            <div class="button">
+                <div class="icon">
+                    <i class="bx bxl-instagram" aria-hidden="true"></i>
+                </div>
+                <span>Instagram</span>
+            </div>
+        
+            <div class="button">
+                <div class="icon">
+                    <i class="bx bxl-linkedin" aria-hidden="true"></i>
+                </div>
+                <span>Linkedin</span>
+            </div>
+        
+            <div class="button">
+                <div class="icon">
+                    <i class="bx bxl-twitter" aria-hidden="true"></i>
+                </div>
+                <span>Twitter</span>
+            </div>
+           <div class="button">
+                <div class="icon">
+                    <i class="bx bxl-youtube" aria-hidden="true"></i>
+                </div>
+                <span>Youtube</span>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Copyright <strong><span>Đặng Công Vinh</span></strong> Designed by <a href="#">Đặng Công Vinh</a>
+        </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/git/jquery-git.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
